@@ -17,8 +17,8 @@ specifiers:
   '@types/file-saver': 2.0.5
   '@types/json-schema': 7.0.11
   '@types/lodash': 4.14.194
-  '@types/react': 17.0.50
-  '@types/react-dom': 17.0.17
+  '@types/react': 17.0.67
+  '@types/react-dom': 17.0.21
   '@types/react-router-dom': 5.3.3
   '@types/react-table': 7.7.14
   '@types/react-transition-group': 4.4.6
@@ -95,8 +95,8 @@ devDependencies:
   '@types/file-saver': 2.0.5
   '@types/json-schema': 7.0.11
   '@types/lodash': 4.14.194
-  '@types/react': 17.0.50
-  '@types/react-dom': 17.0.17
+  '@types/react': 17.0.67
+  '@types/react-dom': 17.0.21
   '@types/react-router-dom': 5.3.3
   '@types/react-table': 7.7.14
   '@types/react-transition-group': 4.4.6
@@ -134,7 +134,7 @@ devDependencies:
   react: 17.0.2
   react-ace: 9.5.0_sfoxds7t5ydpegc3knd667wn6m
   react-app-polyfill: 3.0.0
-  react-bootstrap: 2.5.0_hiunvzosbwliizyirxfy6hjyim
+  react-bootstrap: 2.5.0_cohpfceqztl2xbov5b2qeraax4
   react-css-theme-switcher: 0.3.0_react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-i18next: 11.18.6_jlvubkh2ypz6tastophpvdjiqq
@@ -525,7 +525,7 @@ packages:
       '@types/node': 20.5.6
       chalk: 4.1.2
       cosmiconfig: 7.1.0
-      cosmiconfig-typescript-loader: 2.0.2_mq2j5tmbocaxm2lwr7cghto5ba
+      cosmiconfig-typescript-loader: 2.0.2_irlohhtf5mvuiinoeihwq7plxq
       lodash: 4.17.21
       resolve-from: 5.0.0
       typescript: 4.8.4
@@ -973,17 +973,17 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/17.0.17:
-    resolution: {integrity: sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==}
+  /@types/react-dom/17.0.21:
+    resolution: {integrity: sha512-3rQEFUNUUz2MYiRwJJj6UekcW7rFLOtmK7ajQP7qJpjNdggInl3I/xM4I3Hq1yYPdCGVMgax1gZsB7BBTtayXg==}
     dependencies:
-      '@types/react': 17.0.50
+      '@types/react': 17.0.67
     dev: true
 
   /@types/react-router-dom/5.3.3:
     resolution: {integrity: sha512-kpqnYK4wcdm5UaWI3fLcELopqLrHgLqNsdpHauzlQktfkHL3npOSwtj1Uz9oKBAzs7lFtVkV8j83voAz2D8fhw==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 17.0.50
+      '@types/react': 17.0.67
       '@types/react-router': 5.1.20
     dev: true
 
@@ -991,23 +991,23 @@ packages:
     resolution: {integrity: sha512-jGjmu/ZqS7FjSH6owMcD5qpq19+1RS9DeVRqfl1FeBMxTDQAGwlMWOcs52NDoXaNKyG3d1cYQFMs9rCrb88o9Q==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 17.0.50
+      '@types/react': 17.0.67
     dev: true
 
   /@types/react-table/7.7.14:
     resolution: {integrity: sha512-TYrv7onCiakaG1uAu/UpQ9FojNEt/4/ht87EgJQaEGFoWV606ZLWUZAcUHzMxgc3v1mywP1cDyz3qB4ho3hWOw==}
     dependencies:
-      '@types/react': 17.0.50
+      '@types/react': 17.0.67
     dev: true
 
   /@types/react-transition-group/4.4.6:
     resolution: {integrity: sha512-VnCdSxfcm08KjsJVQcfBmhEQAPnLB8G08hAxn39azX1qYBQ/5RVQuoHuKIcfKOdncuaUvEpFKFzEvbtIMsfVew==}
     dependencies:
-      '@types/react': 17.0.50
+      '@types/react': 17.0.67
     dev: true
 
-  /@types/react/17.0.50:
-    resolution: {integrity: sha512-ZCBHzpDb5skMnc1zFXAXnL3l1FAdi+xZvwxK+PkglMmBrwjpp9nKaWuEvrGnSifCJmBFGxZOOFuwC6KH/s0NuA==}
+  /@types/react/17.0.67:
+    resolution: {integrity: sha512-zE76EIJ0Y58Oy9yDX/9csb/NuKjt0Eq2YgWb/8Wxo91YmuLzzbyiRoaqJE9h8iDlsT7n35GdpoLomHlaB1kFbg==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
@@ -1790,11 +1790,12 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.2_mq2j5tmbocaxm2lwr7cghto5ba:
+  /cosmiconfig-typescript-loader/2.0.2_irlohhtf5mvuiinoeihwq7plxq:
     resolution: {integrity: sha512-KmE+bMjWMXJbkWCeY4FJX/npHuZPNr9XF9q9CIQ/bpFwi1qHfCmSiKarrCcRa0LO4fWjk93pVoeRtJAkTGcYNw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
+      cosmiconfig: '>=7'
       typescript: '>=3'
     dependencies:
       '@types/node': 20.5.6
@@ -4134,7 +4135,7 @@ packages:
       whatwg-fetch: 3.6.17
     dev: true
 
-  /react-bootstrap/2.5.0_hiunvzosbwliizyirxfy6hjyim:
+  /react-bootstrap/2.5.0_cohpfceqztl2xbov5b2qeraax4:
     resolution: {integrity: sha512-j/aLR+okzbYk61TM3eDOU1NqOqnUdwyVrF+ojoCRUxPdzc2R0xXvqyRsjSoyRoCo7n82Fs/LWjPCin/QJNdwvA==}
     peerDependencies:
       '@types/react': '>=16.14.8'
@@ -4147,7 +4148,7 @@ packages:
       '@babel/runtime': 7.22.11
       '@restart/hooks': 0.4.11_react@17.0.2
       '@restart/ui': 1.6.6_sfoxds7t5ydpegc3knd667wn6m
-      '@types/react': 17.0.50
+      '@types/react': 17.0.67
       '@types/react-transition-group': 4.4.6
       classnames: 2.3.2
       dom-helpers: 5.2.1
@@ -5029,7 +5030,7 @@ packages:
       react: '>=15.0.0'
     dependencies:
       '@babel/runtime': 7.22.11
-      '@types/react': 17.0.50
+      '@types/react': 17.0.67
       invariant: 2.2.4
       react: 17.0.2
       react-lifecycles-compat: 3.0.4
@@ -5389,6 +5390,6 @@ packages:
     dependencies:
       '@rjsf/core': 4.2.3_react@17.0.2
       react: 17.0.2
-      react-bootstrap: 2.5.0_hiunvzosbwliizyirxfy6hjyim
+      react-bootstrap: 2.5.0_cohpfceqztl2xbov5b2qeraax4
       react-icons: 4.10.1_react@17.0.2
     dev: true
