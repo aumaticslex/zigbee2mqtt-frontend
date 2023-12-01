@@ -19,10 +19,10 @@ devDependencies:
     version: 6.4.2
   '@rjsf/bootstrap-5':
     specifier: https://github.com/nurikk/fileshare/blob/main/rjsf-bootstrap-5-4.2.0.tgz?raw=true
-    version: '@github.com/nurikk/fileshare/blob/main/rjsf-bootstrap-5-4.2.0.tgz?raw=true(@rjsf/core@4.2.3)(react-bootstrap@2.9.0)(react@18.2.0)'
+    version: '@github.com/nurikk/fileshare/blob/main/rjsf-bootstrap-5-4.2.0.tgz?raw=true(@rjsf/core@5.15.0)(react-bootstrap@2.9.0)(react@18.2.0)'
   '@rjsf/core':
-    specifier: ~4.2.3
-    version: 4.2.3(react@18.2.0)
+    specifier: ~5.15.0
+    version: 5.15.0(@rjsf/utils@5.15.0)(react@18.2.0)
   '@toolz/local-storage':
     specifier: ~1.0.5
     version: 1.0.5
@@ -1046,23 +1046,34 @@ packages:
       warning: 4.0.3
     dev: true
 
-  /@rjsf/core@4.2.3(react@18.2.0):
-    resolution: {integrity: sha512-dRXhd1Tac/9OcG0VDrYDF2boNTyKINEEITEtJ4L1Yce2iMVk66U52BhWKIFp/WXDM27vwnOfwQo4NwGiqeQeHw==}
-    engines: {node: '>=12'}
+  /@rjsf/core@5.15.0(@rjsf/utils@5.15.0)(react@18.2.0):
+    resolution: {integrity: sha512-tD+S0Sx6TtiW1Wp2E8fLArlKcPDXaOS0MBnM6FNWZuum1bbQFoavjm/wf0PpKQ2AohsKGvWXjIAajC+HX4Anww==}
+    engines: {node: '>=14'}
     peerDependencies:
-      react: '>=16 || >=17'
+      '@rjsf/utils': ^5.12.x
+      react: ^16.14.0 || >=17
     dependencies:
-      '@types/json-schema': 7.0.13
-      ajv: 6.12.6
-      core-js-pure: 3.33.0
-      json-schema-merge-allof: 0.6.0
-      jsonpointer: 5.0.1
+      '@rjsf/utils': 5.15.0(react@18.2.0)
       lodash: 4.17.21
       lodash-es: 4.17.21
+      markdown-to-jsx: 7.3.2(react@18.2.0)
       nanoid: 3.3.6
       prop-types: 15.8.1
       react: 18.2.0
-      react-is: 16.9.0
+    dev: true
+
+  /@rjsf/utils@5.15.0(react@18.2.0):
+    resolution: {integrity: sha512-+K+WA/tGD8jSDRB6QzCvyCY0/rVZ+q/u0f07AGfx/h/ICVcJjOy5fWtUANQ0bBltLNPqjXqpFb3e3SxDXzSVaA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: ^16.14.0 || >=17
+    dependencies:
+      json-schema-merge-allof: 0.8.1
+      jsonpointer: 5.0.1
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      react: 18.2.0
+      react-is: 18.2.0
     dev: true
 
   /@rollup/pluginutils@4.2.1:
@@ -2120,11 +2131,6 @@ packages:
 
   /convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
-    dev: true
-
-  /core-js-pure@3.33.0:
-    resolution: {integrity: sha512-FKSIDtJnds/YFIEaZ4HszRX7hkxGpNKM7FC9aJ9WLJbSd3lD4vOltFuVIBLR8asSx9frkTSqL0dw90SKQxgKrg==}
-    requiresBuild: true
     dev: true
 
   /core-js@3.33.0:
@@ -3668,8 +3674,9 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /json-schema-merge-allof@0.6.0:
-    resolution: {integrity: sha512-LEw4VMQVRceOPLuGRWcxW5orTTiR9ZAtqTAe4rQUjNADTeR81bezBVFa0MqIwp0YmHIM1KkhSjZM7o+IQhaPbQ==}
+  /json-schema-merge-allof@0.8.1:
+    resolution: {integrity: sha512-CTUKmIlPJbsWfzRRnOXz+0MjIqvnleIXwFTzz+t9T86HnYX/Rozria6ZVGLktAU9e+NygNljveP+yxqtQp/Q4w==}
+    engines: {node: '>=12.0.0'}
     dependencies:
       compute-lcm: 1.1.2
       json-schema-compare: 0.2.2
@@ -3889,6 +3896,15 @@ packages:
   /map-obj@4.3.0:
     resolution: {integrity: sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==}
     engines: {node: '>=8'}
+    dev: true
+
+  /markdown-to-jsx@7.3.2(react@18.2.0):
+    resolution: {integrity: sha512-B+28F5ucp83aQm+OxNrPkS8z0tMKaeHiy0lHJs3LqCyDQFtWuenaIrkaVTgAm1pf1AU85LXltva86hlaT17i8Q==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    dependencies:
+      react: 18.2.0
     dev: true
 
   /meow@12.1.1:
@@ -4573,8 +4589,8 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
 
-  /react-is@16.9.0:
-    resolution: {integrity: sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==}
+  /react-is@18.2.0:
+    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
   /react-lifecycles-compat@3.0.4:
@@ -5749,7 +5765,7 @@ packages:
       - supports-color
     dev: true
 
-  '@github.com/nurikk/fileshare/blob/main/rjsf-bootstrap-5-4.2.0.tgz?raw=true(@rjsf/core@4.2.3)(react-bootstrap@2.9.0)(react@18.2.0)':
+  '@github.com/nurikk/fileshare/blob/main/rjsf-bootstrap-5-4.2.0.tgz?raw=true(@rjsf/core@5.15.0)(react-bootstrap@2.9.0)(react@18.2.0)':
     resolution: {tarball: https://github.com/nurikk/fileshare/blob/main/rjsf-bootstrap-5-4.2.0.tgz?raw=true}
     id: '@github.com/nurikk/fileshare/blob/main/rjsf-bootstrap-5-4.2.0.tgz?raw=true'
     name: '@rjsf/bootstrap-5'
@@ -5760,7 +5776,7 @@ packages:
       react: '>=16'
       react-bootstrap: ^2.4.0
     dependencies:
-      '@rjsf/core': 4.2.3(react@18.2.0)
+      '@rjsf/core': 5.15.0(@rjsf/utils@5.15.0)(react@18.2.0)
       react: 18.2.0
       react-bootstrap: 2.9.0(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)
       react-icons: 4.11.0(react@18.2.0)
