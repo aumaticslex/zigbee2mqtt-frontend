@@ -231,8 +231,8 @@ devDependencies:
     specifier: ~0.19.0
     version: 0.19.0
   zigbee-herdsman-converters:
-    specifier: ~15.87.0
-    version: 15.87.0
+    specifier: ~15.132.0
+    version: 15.132.0
 
 packages:
 
@@ -1690,8 +1690,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios@1.5.1:
-    resolution: {integrity: sha512-Q28iYCWzNHjAm+yEAot5QaAMxhMghWLFVf7rRdwhUI+c2jix2DUXjAHXVi+s1ibs3mjPO/cCgbA++3BjD0vP/A==}
+  /axios@1.6.2:
+    resolution: {integrity: sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==}
     dependencies:
       follow-redirects: 1.15.3
       form-data: 4.0.0
@@ -2300,6 +2300,11 @@ packages:
 
   /debounce@1.2.1:
     resolution: {integrity: sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==}
+    dev: true
+
+  /debounce@2.0.0:
+    resolution: {integrity: sha512-xRetU6gL1VJbs85Mc4FoEGSjQxzpdxRyFhe3lmWFyy2EzydIcD4xzUvRJMD+NPDfMwKNhxa3PvsIOU32luIWeA==}
+    engines: {node: '>=18'}
     dev: true
 
   /debug@4.3.4:
@@ -5719,14 +5724,14 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /zigbee-herdsman-converters@15.87.0:
-    resolution: {integrity: sha512-e5hddBPNZor4okpabq8hJFv5OQiQgCzgwdJCDTiBDsPcT4pvpJs6Q5b5ZbpR5m9CB+XAB1M9oZTxFIpzNLWZQw==}
+  /zigbee-herdsman-converters@15.132.0:
+    resolution: {integrity: sha512-DMHwypSEJ8hv3POWAMMqx0YHkU7QS88GuU7AkPsu49eHtLYro/utTpgxb5ugasbaUYXY4LHNCmHzAW4GFIwPGA==}
     dependencies:
-      axios: 1.5.1
+      axios: 1.6.2
       buffer-crc32: 0.2.13
       https-proxy-agent: 7.0.2
       tar-stream: 3.1.6
-      zigbee-herdsman: 0.19.0
+      zigbee-herdsman: 0.25.2
     transitivePeerDependencies:
       - debug
       - supports-color
@@ -5740,6 +5745,23 @@ packages:
       '@serialport/stream': 12.0.0
       bonjour-service: 1.1.1
       debounce: 1.2.1
+      debug: 4.3.4
+      fast-deep-equal: 3.1.3
+      mixin-deep: 2.0.1
+      mz: 2.7.0
+      slip: 1.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /zigbee-herdsman@0.25.2:
+    resolution: {integrity: sha512-S8knsMet9PVOXZRyyY34a5rD4os2lCap7oRAkhDM5nWaOo8s1Snsjp/zGl7uiBawv/TLOGca7WCjas45sbRWog==}
+    dependencies:
+      '@serialport/bindings-cpp': 12.0.1
+      '@serialport/parser-delimiter': 12.0.0
+      '@serialport/stream': 12.0.0
+      bonjour-service: 1.1.1
+      debounce: 2.0.0
       debug: 4.3.4
       fast-deep-equal: 3.1.3
       mixin-deep: 2.0.1
